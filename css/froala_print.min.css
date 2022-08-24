@@ -1,0 +1,48 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: geometricPrecision;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+/** PRIV-79【HTML模板】动态表格表头名称支持设置粗体 */
+th {
+    font-weight: normal;
+}
+
+td,
+th {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(221, 221, 221);
+}
+table {
+    border-collapse: collapse;
+}
+
+td span.cloumns-style__label:empty {
+    display: inline-block;
+    height: 20px;
+}
+
+/* wkhtmltopdf问题：如果最后一个为完整单词，则文本参数的最后一个字母会内部换行 */
+[data-qys-type=text]::after,
+[data-qys-type=mobile]::after,
+[data-qys-type=email]::after {
+    content: '*';
+    font-size: 0;
+    visibility: hidden;
+}
