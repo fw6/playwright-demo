@@ -1,13 +1,12 @@
 {
-  "name": "packages",
+  "name": "new-html2pdf",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.24.1"
-  }
+  "license": "ISC"
 }
